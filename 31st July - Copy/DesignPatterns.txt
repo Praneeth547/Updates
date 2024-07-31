@@ -1,0 +1,141 @@
+Creational design patterns:-
+--------------------------
+
+Creational design patterns are concerned with the way of creating objects. These design patterns are used when a decision must be made at the time of instantiation of a class (i.e. creating an object of a class).trying to create objects in a manner suitable to the situation. The primary focus is to create objects while keeping system complexity in check. 
+
+1.Factory Method Pattern:-
+------------------------
+
+A Factory Pattern or Factory Method Pattern says that just define an interface or abstract class for creating an object but let the subclasses decide which class to instantiate. In other words, subclasses are responsible to create the instance of the class.
+
+-->If we have a super class and n sub-classes and based on data provided, we have to return the obj of one of the sub classes, we use factory pattern.
+-->The basic principle behind this pattern is that,we get an obj of similar type based on the parameter we pass.
+
+If we notice the name Factory method, that means there is a method which is a factory, and in general, factories are involved with creational stuff and here with this, an object is being created.
+It is one of the best ways to create an object where object creation logic is hidden from the client and refer to newly created obj using a common interface. Now Let’s look at the implementation.
+
+Implementation:-
+--------------
+-->Create an interface.
+-->Create its implementation classes
+-->Create an Factory class(interface/abstract) with method return type interface name, where will decide which imp obj will be created.
+-->Test in main method.
+      (F)  Creator creatorA = new ConcreteCreatorA();
+      (I)  Product productA = creatorA.factoryMethod();
+
+Decoupling: It separates object creation logic from the client code that uses those objects. 
+Extensibility: It’s easy to introduce new product types without changing the client code.
+Encapsulation: It hides the concrete product classes from the client code, making the code less dependent on specific implementations. This improves maintainability and reduces coupling.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
